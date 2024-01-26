@@ -40,3 +40,7 @@ Boston, MA 02111-1307, USA.  */
 
 #undef ENDFILE_SPEC
 #define ENDFILE_SPEC "crtend.o%s crtn.o%s"
+
+/* Use int, instead of long int, for int32_t and uint32_t.  */
+#undef STDINT_LONG32
+#define STDINT_LONG32 0
